@@ -5,4 +5,13 @@ class Multiply < Operation
     "#{left} * #{right}"
   end
 
+  def reduce
+    super(self.class)
+  end
+
+  def self.operator
+    "*"
+  end
+
+
 end

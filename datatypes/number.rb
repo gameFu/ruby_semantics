@@ -8,4 +8,8 @@ class Number < Struct.new(:value)
     value.to_s
   end
 
+  def reducible?
+    false
+  end
+
 end

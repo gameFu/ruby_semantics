@@ -10,6 +10,7 @@ class Machine < Struct.new(:expression, :env)
       step
     end
     puts expression
+    expression
   end
 
 end

@@ -1,4 +1,5 @@
 require_relative './datatype.rb'
-class Number < Datatype
+
+class Boolean < Datatype
 
 end

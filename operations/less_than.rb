@@ -1,8 +1,9 @@
 require_relative './operation.rb'
-class Add < Operation
+
+class LessThan < Operation
 
   def to_s
-    "#{left} + #{right}"
+    "#{left} < #{right}"
   end
 
   def reduce(env)
@@ -10,7 +11,7 @@ class Add < Operation
   end
 
   def self.operator
-    "+"
+    "<"
   end
 
 end

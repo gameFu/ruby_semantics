@@ -5,8 +5,8 @@ class Multiply < Operation
     "#{left} * #{right}"
   end
 
-  def reduce
-    super(self.class)
+  def reduce(env)
+    super(self.class, env)
   end
 
   def self.operator

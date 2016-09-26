@@ -1,7 +1,7 @@
-class Machine < Struct.new(:expression)
+class Machine < Struct.new(:expression, :env)
 
   def step
-    self.expression = expression.reduce
+    self.expression = expression.reduce(env)
   end
 
   def run

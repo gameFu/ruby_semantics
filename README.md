@@ -12,7 +12,6 @@ ruby实现的简单计算机
 
 number
 
-```
 Number.new(1)
 
 ```ruby

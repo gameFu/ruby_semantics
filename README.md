@@ -19,7 +19,6 @@ Number.new(1)
 
 boolean
 
-```
 Boolean.new(true)
 
 ```

@@ -10,7 +10,7 @@ class DoNothing
 
   # 由于没有继承struct类，所以，必须手动定义
   def ==(other_statement)
-    other_statement.instance_of?(other_statement)
+    other_statement.instance_of?(DoNothing)
   end
 
   def reducible?

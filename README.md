@@ -115,3 +115,22 @@ y = 6, {:x=>3}
 do-nothing, {:x=>3, :y=>6}
 
 ```
+
+5. while语句
+
+循环结构，类似于ruby中的where
+
+```ruby
+
+Machine.new(
+  While.new(
+   LessThan.new(Variable.new(:x), Number.new(5)),
+   Assign.new(:x,
+    Add.new(Variable.new(:x), Number.new(3) )
+    )
+  ),
+  {x: Number.new(1)}
+).run
+
+
+```

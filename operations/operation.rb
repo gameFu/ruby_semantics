@@ -16,7 +16,7 @@ class Operation < Struct.new(:left, :right)
     elsif right.reducible?
       operation.new(left, right.reduce(env))
     else
-      Number.new(left.value.send(operation.operator, right.value))
+      operation.operator_class.new(left.value.send(operation.operator, right.value))
     end
 
   end

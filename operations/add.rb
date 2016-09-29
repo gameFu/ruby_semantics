@@ -13,4 +13,8 @@ class Add < Operation
     "+"
   end
 
+  def self.operator_class
+    Number
+  end
+
 end

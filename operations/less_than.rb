@@ -14,4 +14,8 @@ class LessThan < Operation
     "<"
   end
 
+  def self.operator_class
+    Boolean
+  end
+
 end

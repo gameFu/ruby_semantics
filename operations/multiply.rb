@@ -13,5 +13,9 @@ class Multiply < Operation
     "*"
   end
 
+  def self.operator_class
+    Number
+  end
+
 
 end
